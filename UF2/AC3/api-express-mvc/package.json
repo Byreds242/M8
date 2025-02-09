@@ -2,6 +2,10 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.2",
+<<<<<<< HEAD
+=======
+    "mongodb": "^6.13.0",
+>>>>>>> 9ff6f07 (modulo m8)
     "mysql2": "^3.12.0"
   }
 }

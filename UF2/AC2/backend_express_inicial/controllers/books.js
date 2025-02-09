@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const books = require('../api/books')
 
 const getBooks = ((req, res) => {
@@ -17,4 +18,25 @@ const createBook = (req, res) => {
 
 module.exports = {
     getBooks: getBooks
+=======
+const books = require('../api/books')
+
+const getBooks = ((req, res) => {
+    res.json(books)
+})
+
+const createBook = (req, res) => {
+    const newBook = {
+        id: books.length + 1,
+        title: req.body.title,
+        author: req.body.author,
+        year: req.body.year
+    }
+    books.push(newBook)
+    res.status(201).json(newBook)
+}
+
+module.exports = {
+    getBooks: getBooks
+>>>>>>> 9ff6f07 (modulo m8)
 }
